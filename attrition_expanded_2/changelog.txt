@@ -1,0 +1,9 @@
+Increased attrition taken in hostile territory
+Increased the attrition cap
+Increased the amount of devastation taken 
+Decreased the supply limit for all province types
+Decreased the hostile movement speed in harsh weather provinces
+Increasd the effects of being under blocade
+Decreased the amount of attrition you take while in a hostile blocaded province to simulate oversea supply lines
+Increased the buffs for developing provinces
+Decreased the amount by which development cost scales

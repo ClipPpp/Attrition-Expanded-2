@@ -1,0 +1,75 @@
+#attrition loses causes cannibalism
+namespace = attrition_expanded_namespace
+country_event = {
+	id = attrition_expanded_namespace.1
+	title = "attrition_expanded_title.1"
+	desc = "attrition_expanded_desc.1"
+	picture = NATIVES_eventPicture #place holder
+	
+	trigger = {
+		current_war_losses = {
+			type = all
+			cause = attrition
+			amount = 25000
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1825
+	}
+	
+
+	
+	option = {
+		name = "attrition_expanded_desc.1.a"
+		ai_chance = {
+			factor = 50
+		}
+		add_yearly_manpower = -2
+		add_country_modifier = {
+			name =  "cannibalism_in_the_ranks"
+			duration = 365
+		}
+	}
+	option = {
+		name = "attrition_expanded_desc.1.b"
+		ai_chance = {
+			factor = 50
+		}
+		add_yearly_manpower = -1
+		add_years_of_income = -1
+		add_country_modifier = {
+			name = "importing_food"
+			duration = 365
+		}
+	}
+
+}
+#Country Starves Beginning Event
+country_event = {
+	id = attrition_expanded_namespace.2
+	title = "attrition_expanded_title.2"
+	desc = "attrition_expanded_desc.2"
+	picture = NATIVES_eventPicture #place holder
+	
+	option = {
+		name = "attrition_expanded_desc.2.a"
+		add_yearly_manpower = -1
+	
+	}
+
+}
+#Country Starves Ending Event
+country_event = {
+	id = attrition_expanded_namespace.3
+	title = "attrition_expanded_title.3"
+	desc = "attrition_expanded_desc.3"
+	picture = NATIVES_eventPicture #place holder
+	
+	option = {
+		name = "attrition_expanded_desc.3.a"
+		
+	
+	}
+
+}

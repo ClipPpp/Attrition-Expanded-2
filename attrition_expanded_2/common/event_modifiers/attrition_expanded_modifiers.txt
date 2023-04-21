@@ -1,0 +1,5 @@
+cannibalism_in_the_ranks = {
+	manpower_recovery_speed = -0.05
+	discipline = -0.05
+	land_morale = -0.1
+}

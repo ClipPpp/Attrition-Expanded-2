@@ -1,0 +1,74 @@
+country_starves = {
+	potential = {
+		NOT = { has_country_flag = country_starves_happened }
+		
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		NOT = { stability = 3 }
+		calc_true_if = {
+			any_owned_province = {
+				devastation = 50
+			}
+			amount = 10
+		}
+		
+	}
+	
+	can_stop = {
+		has_any_disaster = yes
+	
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+				any_owned_province = {
+					devastation = 90
+				}
+			}
+		modifier = {
+			factor = 1
+			calc_true_if = {
+				any_owned_province = {
+					devastation = 75
+				}
+				amount = 3
+			}
+		}
+		modifier = {
+			factor = 1
+			calc_true_if = {
+				any_owned_province = {
+					devastation = 50
+				}
+				amount = 5
+			}
+		}
+	
+	}
+
+	
+	modifier = {
+		global_unrest = 5
+		stability_cost_modifier = 0.5
+		global_tax_modifier = -0.1
+		production_efficiency = -0.1
+		development_cost = 0.25
+		manpower_recover_speed = -0.25
+		hostile_attrition = 5
+		max_hostile_attrition = 5
+		
+	}
+	
+	on_start = attrition_expanded_namespace.2
+	on_end = attrition_expanded_namespace.3
+	
+	can_end = {
+		had_country_flag = { flag = country_starves_happened = 1825 }
+		stability = 3
+	
+	}
+	
+}

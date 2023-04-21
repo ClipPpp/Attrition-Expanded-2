@@ -1,0 +1,13 @@
+﻿l_english: 
+ attrition_expanded_title.1:0 "Cannibalism in the Ranks!"
+ attrition_expanded_desc.1:0 "Due to the severe lack of supplies being sent to our armies, cannibalism has spread through the ranks."
+ attrition_expanded_desc.1.a:0 "Let them Feast on the Fallen"
+ attrition_expanded_desc.1.b:0 "Import Supplies"
+ attrition_expanded_title.2:0 "Our Country Starves"
+ attrition_expanded_desc.2:0 "War, famine, and plauge stalk the lands. Fields burnt or barren, peasants dead or dying, and we all go to sleep hungry."
+ attrition_expanded_desc.2.a:0 "We All Starve Together"
+ attrition_expanded_title.3:0 "Our Country No Longer Starves"
+ attrition_expanded_desc.3:0 "Years of rebuilding have come to fruition. Fields are flourishing, peasants are productive, and we all sleep satiated."
+ attrition_expanded_desc.3.a:0 "We are Past the Worst of it."
+ cannibalism_in_the_ranks:0 "Cannibalism in the Ranks"
+ country_starves:0 "Our Country Starves"

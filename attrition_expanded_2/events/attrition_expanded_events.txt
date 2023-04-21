@@ -52,6 +52,10 @@ country_event = {
 	desc = "attrition_expanded_desc.2"
 	picture = NATIVES_eventPicture #place holder
 	
+	trigger = {
+		adm_power = 9999
+	}
+	
 	option = {
 		name = "attrition_expanded_desc.2.a"
 		add_yearly_manpower = -1
@@ -65,6 +69,10 @@ country_event = {
 	title = "attrition_expanded_title.3"
 	desc = "attrition_expanded_desc.3"
 	picture = NATIVES_eventPicture #place holder
+	
+	trigger = {
+		adm_power = 9999
+	}
 	
 	option = {
 		name = "attrition_expanded_desc.3.a"

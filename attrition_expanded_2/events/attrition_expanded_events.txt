@@ -52,9 +52,7 @@ country_event = {
 	desc = "attrition_expanded_desc.2"
 	picture = NATIVES_eventPicture #place holder
 	
-	trigger = {
-		adm_power = 9999
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = "attrition_expanded_desc.2.a"
@@ -70,9 +68,7 @@ country_event = {
 	desc = "attrition_expanded_desc.3"
 	picture = NATIVES_eventPicture #place holder
 	
-	trigger = {
-		adm_power = 9999
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = "attrition_expanded_desc.3.a"

@@ -443,14 +443,14 @@ under_siege = {
 
 
 devastation = {
-	trade_goods_size_modifier = -3
+	trade_goods_size_modifier = -2
 	supply_limit_modifier = -0.75
-	local_institution_spread = -3.0
+	local_institution_spread = -2.5
 	local_development_cost = 0.5
-	local_manpower_modifier = -3.0
-	local_sailors_modifier = -3.0
-	local_hostile_movement_speed = -0.75
-	local_friendly_movement_speed = -0.75
+	local_manpower_modifier = -1.5
+	local_sailors_modifier = -1.5
+	local_hostile_movement_speed = -0.5
+	local_friendly_movement_speed = -0.33
 	war_exhaustion = 0.01
 }
 

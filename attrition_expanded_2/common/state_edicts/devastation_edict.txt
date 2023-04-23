@@ -1,0 +1,37 @@
+edict_reduce_devastation = {
+	potential = {
+		always = yes		#we support "potential" if modders want to have lots and just show some.
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_manpower_modifier = -0.25
+		local_monthly_devastation = -1.0
+ 		local_tax_modifier = -0.25
+	}
+	
+	color = {  204 50 254  }
+	
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			owner = {
+				manpower_percentage = 0.4
+			}
+		}
+		modifier = {
+			factor = 3
+			all_province_in_state = {
+				base_manpower = 5
+			}
+			any_province_in_state = {
+				base_manpower = 15
+			}
+		}
+	}
+}

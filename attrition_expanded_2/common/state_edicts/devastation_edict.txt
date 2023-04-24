@@ -8,29 +8,59 @@ edict_reduce_devastation = {
 	}
 	
 	modifier = {
-		local_manpower_modifier = -0.25
-		local_monthly_devastation = -1.0
- 		local_tax_modifier = -0.25
+		local_monthly_devastation = -0.20
 	}
 	
 	color = {  204 50 254  }
 	
 	
 	ai_will_do = {
-		factor = 10
+		factor = 100
 		modifier = {
 			factor = 0
-			owner = {
-				manpower_percentage = 0.4
+			AND = {
+				has_state_edict = edict_of_absolutism
+				all_province_in_state = {
+					NOT = {
+						devastation = 1
+					}	
+				}
 			}
 		}
 		modifier = {
-			factor = 3
-			all_province_in_state = {
-				base_manpower = 5
+			factor = 5
+			has_state_edict = edict_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			
+			AND = {
+				NOT = { has_state_edict = edict_of_absolutism }
+				all_province_in_state = {
+					NOT = {
+						devastation = 2
+					}
+				}
 			}
-			any_province_in_state = {
-				base_manpower = 15
+		}
+		modifier = {
+			factor = 5
+			
+			AND = {
+				NOT = { has_state_edict = edict_of_absolutism }
+				all_province_in_state = {
+					devastation = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			
+			AND = {
+				NOT = { has_state_edict = edict_of_absolutism }
+				any_province_in_state = {
+					devastation = 10
+				}
 			}
 		}
 	}

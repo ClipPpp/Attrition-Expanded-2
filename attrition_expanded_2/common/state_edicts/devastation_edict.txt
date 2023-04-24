@@ -15,37 +15,30 @@ edict_reduce_devastation = {
 	
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1
 		modifier = {
-			factor = 0
-				all_province_in_state = {
-					NOT = {
-						devastation = 1
-					}	
-				}
-		}
-		modifier = {
-			factor = 0
-			
-			AND = {
-				all_province_in_state = {
-					NOT = {
-						devastation = 2
-					}
-				}
+			factor = 20
+			any_province_in_state = {
+				devastation = 10
 			}
 		}
 		modifier = {
-			factor = 5
-				all_province_in_state = {
-					devastation = 5
-				}
-		}
+			factor = 50
+			any_province_in_state = {
+				devastation = 20
+			}
+		}	
 		modifier = {
-			factor = 5
-				any_province_in_state = {
-					devastation = 10
-				}
+			factor = 75
+			any_province_in_state = {
+				devastation = 50
 			}
 		}
+		modifier = {
+			factor = 100
+			any_province_in_state = {
+				devastation = 75
+			}
+		}
+	}
 }

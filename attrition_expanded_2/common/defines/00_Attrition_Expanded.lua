@@ -22,3 +22,4 @@ NDefines.NMilitary.CAV_SUPPRESSION = 0.25						-- The amount of reduction to unr
 NDefines.NMilitary.ART_SUPPRESSION = 0.25						-- The amount of reduction to unrest for each friendly artillery regiment in a province
 NDefines.NAI.DEVELOPMENT_CAP_BASE = 30	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 NDefines.NAI.DEVELOPMENT_CAP_MULT = 3
+NDefines.NMilitary.FORT_DEVASTATION_IMPACT = -15,					-- multiplied by fortlevel/max fortlevel in area per year.

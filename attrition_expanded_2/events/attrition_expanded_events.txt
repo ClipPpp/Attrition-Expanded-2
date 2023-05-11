@@ -15,7 +15,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1825
+		days = 1095 #tie to war exhaustion. more equals lower mtth
 	}
 	
 
@@ -57,7 +57,9 @@ country_event = {
 	option = {
 		name = "attrition_expanded_desc.2.a"
 		add_yearly_manpower = -1
-	
+		add_country_modifier = {
+			name = country_starves_happened
+		}
 	}
 
 }
@@ -72,8 +74,309 @@ country_event = {
 	
 	option = {
 		name = "attrition_expanded_desc.3.a"
-		
+		remove_country_modifier = country_starves_happened
+	}
+}
+
+#Malaria Outbreak in sieging army
+country_event = {
+	id = attrition_expanded_namespace.4
+	title = "attrition_expanded_title.4"
+	desc = "attrition_expanded_desc.4"
+	picture = PLAGUE_eventPicture
 	
+	trigger = {
+#		kongo_region = {
+#			NOT = { same_continent = ROOT }
+#			OR = {
+#				has_siege = yes
+#				is_looted = yes
+#			}
+#			controller = {
+#				any_country = {
+#					capital_scope = {
+#						NOT = {
+#							region = kongo_region
+#						}
+#					}
+#				}
+#			}
+#			num_of_units_in_province = {
+#				amount = 1
+#				who = ROOT
+#			}
+#		}
+		is_at_war = yes
+		OR = {
+			AND = {
+				capital_scope = {
+					NOT = {
+						region = kongo_region
+					}
+				}
+				any_war_enemy_country = {
+					capital_scope = {
+						region = kongo_region
+					}
+				}
+				kongo_region = {
+					NOT = { same_continent = ROOT }
+					OR = {
+						has_siege = yes
+						is_looted = yes
+					}
+					num_of_units_in_province = {
+						amount = 1
+						who = ROOT
+					}
+				}
+			}	
+			AND = {
+				capital_scope = {
+					NOT = {
+						region = central_africa_region
+					}
+				}
+				any_war_enemy_country = {
+					capital_scope = {
+						region = central_africa_region
+					}
+				}
+				central_africa_region = {
+					NOT = { same_continent = ROOT }
+					OR = {
+						has_siege = yes
+						is_looted = yes
+					}
+					num_of_units_in_province = {
+						amount = 1
+						who = ROOT
+					}
+				}				
+			}
+			AND = {
+				capital_scope = {
+					NOT = {
+						region = east_africa_region
+					}
+				}
+				any_war_enemy_country = {
+					capital_scope = {
+						region = east_africa_region
+					}
+				}
+				east_africa_region = {
+					NOT = { same_continent = ROOT }
+					OR = {
+						has_siege = yes
+						is_looted = yes
+					}
+					num_of_units_in_province = {
+						amount = 1
+						who = ROOT
+					}
+				}				
+			}
+			AND = {
+				capital_scope = {
+					NOT = {
+						region = south_africa_region
+					}
+				}
+				any_war_enemy_country = {
+					capital_scope = {
+						region = south_africa_region
+					}
+				}
+				south_africa_region = {
+					NOT = { same_continent = ROOT }
+					OR = {
+						has_siege = yes
+						is_looted = yes
+					}
+					num_of_units_in_province = {
+						amount = 1
+						who = ROOT
+					}
+				}				
+			}
+			AND = {
+				capital_scope = {
+					NOT = {
+						region = niger_region
+					}
+				}
+				any_war_enemy_country = {
+					capital_scope = {
+						region = niger_region
+					}
+				}
+				niger_region = {
+					NOT = { same_continent = ROOT }
+					OR = {
+						has_siege = yes
+						is_looted = yes
+					}
+					num_of_units_in_province = {
+						amount = 1
+						who = ROOT
+					}
+				}				
+			}
+			AND = {
+				capital_scope = {
+					NOT = {
+						region = guinea_region
+					}
+				}
+				any_war_enemy_country = {
+					capital_scope = {
+						region = guinea_region
+					}
+				}
+				guinea_region = {
+					NOT = { same_continent = ROOT }
+					OR = {
+						has_siege = yes
+						is_looted = yes
+					}
+					num_of_units_in_province = {
+						amount = 1
+						who = ROOT
+					}
+				}				
+			}
+			AND = {
+				capital_scope = {
+					NOT = {
+						superregion = india
+					}
+				}
+				any_war_enemy_country = {
+					capital_scope = {
+						superregion = india
+					}
+				}
+				india_superregion = {
+					NOT = { same_continent = ROOT }
+					OR = {
+						has_siege = yes
+						is_looted = yes
+					}
+					num_of_units_in_province = {
+						amount = 1
+						who = ROOT
+					}
+				}				
+			}
+		}
+	
+	
+	
+		#is_at_war = yes
+		#unit_owner = ROOT
+		#location = {
+		#	kongo_region = {
+		#		NOT = { same_continent = ROOT }
+		#		AND = {
+		#			num_of_units_in_province = {
+		#				amount = 1
+		#			}
+		#			OR = {
+		#				has_siege = yes
+		#				is_looted = yes
+		#			}
+		#		}
+		#	}
+		#}
+	
+	
+	
+	
+		#sahel_region = {
+		#	AND = {
+		#		OR = {
+		#			has_siege = yes
+		#			is_looted = yes
+		#		}
+		#		NOT = {
+		#			same_continent = ROOT
+		#		}
+		#		num_of_units_in_province = {
+		#			amount = 1
+		#		}		
+		#	}
+		#}	
+
+
+		#THIS = {		
+		#any_country = {
+		#war_with = ROOT
+		#}
+		#}
+		#kongo_region = {
+		#	NOT = { same_continent = ROOT }
+		#	AND = {
+		#		num_of_units_in_province = {
+		#			amount = 1
+		#		}
+		#		OR = {
+		#			has_siege = yes
+		#			is_looted = yes
+		#		}
+		#	}
+		#}
+		#is_in_war = {
+		#	attackers = ROOT
+		#	defenders = THIS
+		#}
+				#
+				#
+				#
+				#india
+				#hindusthan_region
+				#bengal_region 
+				#deccan_region
+				#bengal_region
+				#west_india_region
+				#coromandel_region
+				#
+				#		
 	}
 
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					defensive_war_with = ROOT
+					capital_scope = {
+						OR = {
+							region = kongo_region
+							region = central_africa_region
+							region = east_africa_region
+							region = south_africa_region
+							region = guinea_region
+							region = niger_region
+							superregion = india
+						}
+					}
+				}
+				save_event_target_as = malaria_ground_zero
+			}
+		}
+	}
+	
+	option = { 
+		name = "attrition_expanded_desc.4.a"
+		event_target:malaria_ground_zero = {
+			add_country_modifier = {
+				name = malaria_outbreak_in_hostile_armies
+				duration = 1825
+			}
+		}
+	}
 }

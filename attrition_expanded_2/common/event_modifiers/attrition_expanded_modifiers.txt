@@ -13,6 +13,6 @@ country_starves_happened = {
 	max_hostile_attrition = 5
 }
 malaria_outbreak_in_hostile_armies = {
-	hostile_attrition = 10
-	max_hostile_attrition = 10
+	hostile_attrition = 8
+	max_hostile_attrition = 8
 }

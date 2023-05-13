@@ -346,6 +346,31 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 6
+		
+		modifier = {
+			factor = 1.5
+			has_institution = colonialism
+		}
+		modifier = {
+			factor = 2
+			has_institution = printing_press
+		}
+		modifier = {
+			factor = 2.5
+			has_institution = global_trade
+		}
+		modifier = {
+			factor = 3
+			has_institution = manufactories
+		}
+		modifier = {
+			factor = 3.5
+			has_institution = enlightenment
+		}
+		modifier = {
+			factor = 4
+			has_institution = industrialization
+		}
 	}
 	
 	immediate = {

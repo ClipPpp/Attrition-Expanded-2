@@ -352,23 +352,23 @@ country_event = {
 			has_institution = colonialism
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			has_institution = printing_press
 		}
 		modifier = {
-			factor = 2.5
+			factor = 1.5
 			has_institution = global_trade
 		}
 		modifier = {
-			factor = 3
+			factor = 1.5
 			has_institution = manufactories
 		}
 		modifier = {
-			factor = 3.5
+			factor = 1.5
 			has_institution = enlightenment
 		}
 		modifier = {
-			factor = 4
+			factor = 1.5
 			has_institution = industrialization
 		}
 	}
